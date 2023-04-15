@@ -3,13 +3,13 @@
     {{ .Content}}
     <div style="display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: space-between;">
 
         {{ range .Pages }}  
-          <div style="background-color: bisque; width: 30%;">
+          <div style="background-color: bisque; margin-top: 1rem; width: 30%;">
           <a href="{{ .Permalink }}"> {{.Title }} </a>
           </div>
           
