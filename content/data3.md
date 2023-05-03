@@ -1,91 +1,146 @@
 ---
-title: Install Hugo on macOS.
+title: Install Hugo on macOS
+date: 2023-04-12
 ---
 
+## Install Hugo on macOS
+##### Date: 2023-04-12
 
-## fields: map[site_faq_body:<header class="flex-none w-100">
-<h1 class="lh-title mb3 mv0 pt3 primary-color-dark">macOS</h1>
-</header>
-<aside class="bt bw1 pt3 mt2 mid-gray b--mid-gray fn w-100">
-<div class="f4 fw4 lh-copy">Install Hugo on macOS.</div>
-</aside>
-<div class="prose" id="prose">
-<h2 id="editions">Editions<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#editions"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<p>Hugo is available in two editions: standard and extended. With the extended edition you can:</p>
-<ul>
-<li>Encode WebP images (you can decode WebP images with both editions)</li>
-<li>Transpile Sass to CSS using the embedded LibSass transpiler</li>
-</ul>
-<p>We recommend that you install the extended edition.</p>
-<h2 id="prerequisites">Prerequisites<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#prerequisites"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<p>Although not required in all cases, Git and Go are often used when working with Hugo.</p>
-<p>Git is required to:</p>
-<ul>
-<li>Use the<span>&nbsp;</span><a href="https://gohugo.io/hugo-modules/">Hugo Modules</a><span>&nbsp;</span>feature</li>
-<li>Build Hugo from source</li>
-<li>Install a theme as a Git submodule</li>
-<li>Access<span>&nbsp;</span><a href="https://gohugo.io/variables/git">commit information</a><span>&nbsp;</span>from a local Git repository</li>
-<li>Host your site with services such as<span>&nbsp;</span><a href="https://aws.amazon.com/amplify/">AWS Amplify</a>,<span>&nbsp;</span><a href="https://cloudcannon.com/">CloudCannon</a>,<span>&nbsp;</span><a href="https://pages.cloudflare.com/">Cloudflare Pages</a>,<span>&nbsp;</span><a href="https://pages.github.com/">GitHub Pages</a>,<span>&nbsp;</span><a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>, and<span>&nbsp;</span><a href="https://www.netlify.com/">Netlify</a>.</li>
-</ul>
-<p>Go is required to:</p>
-<ul>
-<li>Use the Hugo Modules feature</li>
-<li>Build Hugo from source</li>
-</ul>
-<p>Please refer to the<span>&nbsp;</span><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a><span>&nbsp;</span>and<span>&nbsp;</span><a href="https://go.dev/doc/install">Go</a><span>&nbsp;</span>documentation for installation instructions.</p>
-<h2 id="prebuilt-binaries">Prebuilt binaries<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#prebuilt-binaries"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<p>Prebuilt binaries are available for a variety of operating systems and architectures. Visit the<span>&nbsp;</span><a href="https://github.com/gohugoio/hugo/releases/latest">latest release</a><span>&nbsp;</span>page, and scroll down to the Assets section.</p>
-<ol>
-<li>Download the archive for the desired<span>&nbsp;</span><a href="https://gohugo.io/installation/macos/#editions">edition</a>, operating system, and architecture</li>
-<li>Extract the archive</li>
-<li>Move the executable to the desired directory</li>
-<li>Add this directory to the PATH environment variable</li>
-<li>Verify that you have<span>&nbsp;</span><em>execute</em><span>&nbsp;</span>permission on the file</li>
-</ol>
-<p>Please consult your operating system documentation if you need help setting file permissions or modifying your PATH environment variable.</p>
-<p>If you do not see a prebuilt binary for the desired edition, operating system, and architecture, install Hugo using one of the methods described below.</p>
-<h2 id="package-managers">Package managers<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#package-managers"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<h3 id="homebrew">Homebrew<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#homebrew"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
-<p><a href="https://brew.sh/">Homebrew</a><span>&nbsp;</span>is a free and open source package manager for macOS and Linux. This will install the extended edition of Hugo:</p>
-<div class="highlight">
-<pre class="chroma" tabindex="0"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install hugo
-</span></span></code></pre>
-</div>
-<h3 id="macports">MacPorts<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#macports"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
-<p><a href="https://www.macports.org/">MacPorts</a><span>&nbsp;</span>is a free and open source package manager for macOS. This will install the extended edition of Hugo:</p>
-<div class="highlight">
-<pre class="chroma" tabindex="0"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo port install hugo
-</span></span></code></pre>
-</div>
-<h2 id="docker">Docker<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#docker"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<p><a href="https://github.com/klakegg">Erlend Klakegg Bergheim</a><span>&nbsp;</span>graciously maintains<span>&nbsp;</span><a href="https://hub.docker.com/r/klakegg/hugo">Docker images</a><span>&nbsp;</span>based on images for Alpine Linux, Busybox, Debian, and Ubuntu.</p>
-<div class="highlight">
-<pre class="chroma" tabindex="0"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker pull klakegg/hugo
-</span></span></code></pre>
-</div>
-<h2 id="build-from-source">Build from source<span>&nbsp;</span><a class="header-link" href="https://gohugo.io/installation/macos/#build-from-source"><svg class="fill-current o-60 hover-accent-color-light" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
-<p>To build Hugo from source you must:</p>
-<ol>
-<li>Install<span>&nbsp;</span><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a></li>
-<li>Install<span>&nbsp;</span><a href="https://go.dev/doc/install">Go</a><span>&nbsp;</span>version 1.18 or later</li>
-<li>Update your PATH environment variable as described in the<span>&nbsp;</span><a href="https://go.dev/doc/code#Command">Go documentation</a></li>
-</ol>
-<blockquote>
-<p>The install directory is controlled by the GOPATH and GOBIN environment variables. If GOBIN is set, binaries are installed to that directory. If GOPATH is set, binaries are installed to the bin subdirectory of the first directory in the GOPATH list. Otherwise, binaries are installed to the bin subdirectory of the default GOPATH ($HOME/go or %USERPROFILE%\go).</p>
-</blockquote>
-<p>Then build and test:</p>
-<div class="highlight">
-<pre class="chroma" tabindex="0"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">go install -tags extended github.com/gohugoio/hugo@latest
-</span></span><span class="line"><span class="cl">hugo version
-</span></span></code></pre>
-</div>
-</div> site_faq_description:This question is asked in regards to Mac users that want to get up and running with Hugo site_faq_tiltle:How do I Install Hugo on my Macbook]
+
+
+
+This tutorial aims to be a complete guide to installing Hugo on your Mac computer.
+
+Assumptions
+You know how to open a terminal window.
+You’re running a modern 64-bit Mac.
+You will use ~/Sites as the starting point for your site.
+Pick Your Method
+There are three ways to install Hugo on your Mac computer: the brew utility, from the distribution, or from source. There’s no “best” way to do this. You should use the method that works best for your use case.
+
+There are pros and cons for each.
+
+Brew is the simplest and least work to maintain. The drawbacks aren’t severe. The default package will be for the most recent release, so it will not have bug-fixes until the next release (unless you install it with the --HEAD option). The release to brew may lag a few days behind because it has to be coordinated with another team. Still, I’d recommend brew if you want to work from a stable, widely used source. It works well and is really easy to update.
+
+Downloading the tarball and installing from it is also easy. You have to have a few more command line skills. Updates are easy, too. You just repeat the process with the new binary. This gives you the flexibility to have multiple versions on your computer. If you don’t want to use brew, then the binary is a good choice.
+
+Compiling from source is the most work. The advantage is that you don’t have to wait for a release to add features or bug fixes. The disadvantage is that you need to spend more time managing the setup. It’s not a lot, but it’s more than with the other two options.
+
+Since this is a “beginner” how-to, I’m going to cover the first two options in detail and go over the third more quickly.
+
+Brew
+Step 1: Install brew if you haven’t already
+Go to the brew website, http://brew.sh/, and follow the directions there. The most important step is:
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+When I did this, I had some problems with directory permissions. Searches on Google pointed me to pages that walked me through updating permissions on the /usr/local directory. Seemed scary, but it’s worked well since.
+
+Step 2: Run the brew command to install hugo
+First, update the formulae and Homebrew itself by running:
+
+$ brew update
+Then, install Hugo using Homebrew by running:
+
+$ brew install hugo
+==> Downloading https://homebrew.bintray.com/bottles/hugo-0.13_1.yosemite.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring hugo-0.13_1.yosemite.bottle.tar.gz
+🍺  /usr/local/Cellar/hugo/0.13_1: 4 files,  14M
+(Note: Replace brew install hugo with brew install hugo --HEAD if you want the absolute latest version in development, but beware—there might be bugs!)
+
+Brew should have updated your path to include Hugo. Confirm by opening a new terminal window and running a few commands:
+
+$ # show the location of the hugo executable
+$ which hugo
+/usr/local/bin/hugo
+
+$ # show the installed version
+$ ls -l $( which hugo )
+lrwxr-xr-x  1 mdhender admin  30 Mar 28 22:19 /usr/local/bin/hugo -> ../Cellar/hugo/0.13_1/bin/hugo
+
+$ # verify that hugo runs correctly
+$ hugo version
+Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
+Step 3: You’re Done
+You’ve installed Hugo. Now you need to set up your site. Read the Quickstart guide, explore the rest of the documentation, and if you still have questions just ask!
+
+From Tarball
+Step 1: Decide on the location
+When installing from the tarball, you have to decide if you’re going to install the binary in /usr/local/bin or in your home directory. There are three camps on this:
+
+Install it in /usr/local/bin so that all the users on your system have access to it. This is a good idea because it’s a fairly standard place for executables. The downside is that you may need elevated privileges to put software into that location. Also, if there are multiple users on your system, they will all run the same version. Sometimes this can be an issue if you want to try out a new release.
+
+Install it in ~/bin so that only you can execute it. This is a good idea because it’s easy to do, easy to maintain, and doesn’t require elevated privileges. The downside is that only you can run Hugo. If there are other users on your site, they have to maintain their own copies. That can lead to people running different versions. of course, this does make it easier for you to experiment with different releases.
+
+Install it in your sites directory. This is not a bad idea if you have only one site that you’re building. It keeps every thing in a single place. If you want to try out new releases, you can just make a copy of the entire site, update the Hugo executable, and have it.
+
+All three locations will work for you. I’m going to document the second option, mostly because I’m comfortable with it.
+
+Step 2: Download the Tarball
+Open https://github.com/spf13/hugo/releases in your browser.
+
+Find the current release by scrolling down and looking for the green tag that reads “Latest Release.”
+
+Download the current tarball for the Mac. The name will be something like hugo_X.Y_osx-64bit.tgz, where X.YY is the release number.
+
+By default, the tarball will be saved to your ~/Downloads directory. If you chose to use a different location, you’ll need to change that in the following steps.
+
+Step 3: Confirm your download
+Verify that the tarball wasn’t corrupted during the download:
+
+$ tar tvf ~/Downloads/hugo_X.Y_osx-64bit.tgz
+-rwxrwxrwx  0 0      0           0 Feb 22 04:02 hugo_X.Y_osx-64bit/hugo_X.Y_osx-64bit.tgz
+-rwxrwxrwx  0 0      0           0 Feb 22 03:24 hugo_X.Y_osx-64bit/README.md
+-rwxrwxrwx  0 0      0           0 Jan 30 18:48 hugo_X.Y_osx-64bit/LICENSE.md
+The .md files are documentation. The other file is the executable.
+
+Step 4: Install into your bin directory
+$ # create the directory if needed
+$ mkdir -p ~/bin
+
+$ # make it the working directory
+$ cd ~/bin
+
+$ # extract the tarball
+$ tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
+Archive:  hugo_X.Y_osx-64bit.tgz
+  x ./
+  x ./hugo
+  x ./LICENSE.md
+  x ./README.md
+
+$ # verify that it runs
+$ ./hugo version
+Hugo Static Site Generator v0.13 BuildDate: 2015-02-22T04:02:30-06:00
+You may need to add your bin directory to your PATH variable. The which command will check for us. If it can find hugo, it will print the full path to it. Otherwise, it will not print anything.
+
+$ # check if hugo is in the path
+$ which hugo
+/Users/USERNAME/bin/hugo
+If hugo is not in your PATH, add it by updating your ~/.bash_profile file. First, start up an editor:
+
+$ nano ~/.bash_profile
+Add a line to update your PATH variable:
+
+export PATH=$PATH:$HOME/bin
+Then save the file by pressing Control-X, then Y to save the file and return to the prompt.
+
+Close the terminal and then open a new terminal to pick up the changes to your profile. Verify by running the which hugo command again.
+
+Step 5: You’re Done
+You’ve installed Hugo. Now you need to set up your site. Read the Quickstart guide, explore the rest of the documentation, and if you still have questions just ask!
+
+Building from Source
+If you want to compile Hugo yourself, you’ll need Go, which is also available from Homebrew: brew install go.
+
+Step 1: Get the Source
+
 
 name: How to install Hugo on my Macbook
 
 page_type: hugo_knowledge_base
 
-published: 2023-04-11T22:32:15.256870Z
+published: 2023-04-11
 
 slug: how-to-install-hugo-on-my-macbook
 

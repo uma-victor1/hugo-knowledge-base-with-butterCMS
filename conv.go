@@ -9,7 +9,7 @@ import (
 	"text/template"
 )
 
-func main() {
+func mainn() {
 	// Read the JSON file
 	data, err := ioutil.ReadFile("./data/kbdata.json")
 	if err != nil {

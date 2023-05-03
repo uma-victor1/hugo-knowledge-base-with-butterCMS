@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func mainn() {
+func main() {
     url := fmt.Sprintf("https://api.buttercms.com/v2/pages/hugo_knowledge_base/?auth_token=54498126032fd5d08df836758b6cc128271ea5b3")
 
     resp, err := http.Get(url)
