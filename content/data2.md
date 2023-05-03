@@ -1,5 +1,6 @@
 ---
-title: Install Hugo on Linux
+title: Install Hugo on Linux 
+description: "Getting started with Hugo"
 date: 2023-04-12
 ---
 

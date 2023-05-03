@@ -8,20 +8,26 @@
     "
   >
     {{ range .Pages }}
-    <div
-      style="
-        background-color: white;
-        margin-top: 1rem;
-    
-        border: 2px solid gray;
-        
-      "
-    >
-      <a href="{{ .Permalink }}">{{.Title}}</a>
+
+      <a       style="
+      background-color: white;
+      margin-top: 1rem;
   
-      <p style="font-size: 13px;">{{.Date | time.Format ":date_medium"}}</p>
+      border: 2px solid gray;
+      text-decoration: none;
+      color: rgb(21, 20, 20);
       
+    " href="{{ .Permalink }}">
+
+    <div style="display: flex; align-items: center; flex-direction: column;">
+      <p style="font-size: 19px; font-weight: 500;">{{.Description}}</p>
+      <p style="color: gray;"> Click to check FAQ in this section</p>
+      <p style="font-size: 13px; font-weight: 500; color: gray;"> 3 articles</p>
     </div>
+    
+  
+  </a>
+
   
     {{end}}
   </div>

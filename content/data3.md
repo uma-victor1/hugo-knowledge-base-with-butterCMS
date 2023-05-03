@@ -1,5 +1,6 @@
 ---
 title: Install Hugo on macOS
+description: "Issues with installation"
 date: 2023-04-12
 ---
 

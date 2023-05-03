@@ -1,5 +1,6 @@
 ---
 title: Install Hugo on BSD derivatives
+description: "How to trouble shoot"
 date: 2023-04-12
 ---
 
