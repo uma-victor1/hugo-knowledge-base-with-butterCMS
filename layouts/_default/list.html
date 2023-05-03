@@ -1,24 +1,30 @@
-{{ define "main" }} 
-
-    {{ .Content}}
-    <div style="display: flex;
+{{ define "main" }} {{ .Content}}
+<div
+  style="
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    align-content: space-between;">
+    align-content: space-between;
+  "
+>
+  {{ range .Pages }}
+  <div
+    style="
+      background-color: white;
+      margin-top: 1rem;
+      padding: 3rem;
+      border: 2px solid gray;
+      width: 30%;
+    "
+  >
+    <a href="{{ .Permalink }}">{{.Title}}</a>
+    <p style="font-size: 13px;">{{.Date | time.Format ":date_medium"}}</p>
+    
+  </div>
 
-        {{ range .Pages }}  
-          <div style="background-color: bisque; margin-top: 1rem; width: 30%;">
-          <a href="{{ .Permalink }}"> {{.Title }} </a>
-          </div>
-          
-        {{end}}
-        
-    </div>
-
+  {{end}}
+</div>
 
 {{end}}
-
-
-
