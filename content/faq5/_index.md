@@ -1,6 +1,6 @@
 ---
 title: Install Hugo on Windows
-description: "Use Case Examples"
+description: "Feature request FAQ"
 date: 2023-04-12
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Install Hugo on Windows
-description: "Use Case Examples"
+description: "Linux troubleshooting"
 date: 2023-04-12
 ---
 
