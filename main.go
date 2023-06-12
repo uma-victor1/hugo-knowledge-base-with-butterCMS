@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-    url := fmt.Sprintf("https://api.buttercms.com/v2/pages/hugo_knowledge_base/?auth_token=54498126032fd5d08df836758b6cc128271ea5b3")
+    url := fmt.Sprintf("https://api.buttercms.com/v2/pages/hugo_knowledge_base/?auth_token=<auth-token>")
 
     resp, err := http.Get(url)
     if err != nil {
@@ -39,7 +39,7 @@ if err != nil {
 }
 defer file.Close()
 
-// Write the JSON data to the file
+// Write the JSON data to the files
 if err := json.NewEncoder(file).Encode(data); err != nil {
     fmt.Printf("Error writing JSON data to file: %s", err)
     return
